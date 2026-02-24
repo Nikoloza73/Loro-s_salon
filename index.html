@@ -58,6 +58,7 @@
        All translatable text lives on data-en / data-ka attributes.
        JS swaps innerHTML on lang switch.
     ================================================================ */
+
     /* ================================================================
        TYPOGRAPHY
     ================================================================ */
@@ -860,7 +861,7 @@
     .form-group select {
       color: rgba(255,255,255,0.6);
       -webkit-appearance: none;
-      appearance: none;
+      appearance: none;      
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9a96e' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 18px center;
@@ -1237,7 +1238,7 @@
           <div class="g-overlay"><div class="g-plus">+</div></div>
         </div>
         <div class="g-item" onclick="openLB(this)">
-          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop" alt="Nail art" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&auto=format&fit=crop&fm=jpg" alt="Nail art" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1604502456576-e3b6d0a67f48?w=600&q=80&auto=format&fit=crop'" />
           <div class="g-overlay"><div class="g-plus">+</div></div>
         </div>
         <div class="g-item" onclick="openLB(this)">
@@ -1257,7 +1258,7 @@
           <div class="g-overlay"><div class="g-plus">+</div></div>
         </div>
         <div class="g-item" onclick="openLB(this)">
-          <img src="https://images.unsplash.com/photo-1596704017257-3e0f4ccbfac9?w=600&q=80&auto=format&fit=crop" alt="Hair styling" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80&auto=format&fit=crop" alt="Hair styling" loading="lazy" />
           <div class="g-overlay"><div class="g-plus">+</div></div>
         </div>
         <div class="g-item" onclick="openLB(this)">
@@ -1270,7 +1271,7 @@
       <div class="gallery-slider-wrap reveal">
         <div class="mob-gallery-track">
           <div class="mob-gallery-item"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
-          <div class="mob-gallery-item"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
+          <div class="mob-gallery-item"><img src="https://images.unsplash.com/photo-1604502456576-e3b6d0a67f48?w=500&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
           <div class="mob-gallery-item"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
           <div class="mob-gallery-item"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
           <div class="mob-gallery-item"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=500&q=80&auto=format&fit=crop" alt="" loading="lazy" /></div>
@@ -1321,7 +1322,7 @@
           </div>
           <div class="info-row">
             <div class="info-row-label" data-t="info_email">Email</div>
-            <div class="info-row-value"><a href="mailto:lorosalon@gmail.com">lorosalon@gmail.com</a></div>
+            <div class="info-row-value"><a href="/cdn-cgi/l/email-protection#cea2a1bca1bdafa2a1a08ea9a3afa7a2e0ada1a3"><span class="__cf_email__" data-cfemail="9ef2f1ecf1edfff2f1f0def9f3fff7f2b0fdf1f3">[email&#160;protected]</span></a></div>
           </div>
           <div class="info-row">
             <div class="info-row-label" data-t="info_hours">Working Hours</div>
@@ -1431,7 +1432,7 @@
   <!-- ================================================================
        JAVASCRIPT
   ================================================================ -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     /* -------------------------------------------------------
        TRANSLATIONS
     ------------------------------------------------------- */
@@ -1664,12 +1665,4 @@
     ------------------------------------------------------- */
     function submitForm(e) {
       e.preventDefault();
-      document.getElementById('cForm').style.display = 'none';
-      const s = document.getElementById('formSuccess');
-      s.style.display = 'block';
-      s.innerHTML = translations[currentLang].form_thanks;
-    }
-  </script>
-
-</body>
-</html>
+   }
